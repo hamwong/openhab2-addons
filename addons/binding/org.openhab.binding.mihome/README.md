@@ -89,22 +89,14 @@ __The devices don't need an Internet connection to be working after you have set
 ### xiaomi.things:
 
 ```
-Bridge mihome:bridge:f0b429XXXXXX "Xiaomi Gateway" [ serialNumber="f0b429XXXXXX", ipAddress="192.168.0.3", port=9898, key="XXXXXXXXXXXXXXXX", pollingInterval=6000 ] {
-    Thing mihome:gateway:f0b429XXXXXX "Xiaomi Mi Smart Home Gateway" [itemId="f0b429XXXXXX"]
-
-    Thing mihome:sensor_ht:158d0001XXXXXX "Xiaomi Temperature Sensor" [itemId="158d0001XXXXXX"]
-    
-    Thing mihome:sensor_weather_v1:158d0001XXXXXX "Xiaomi Aqara Temp, Hum and Press Sensor" [itemId="158d0001XXXXXX"]
-
-    Thing mihome:sensor_motion:158d0001XXXXXX "Xiaomi Motion Sensor" [itemId="158d0001XXXXXX"]
-
-    Thing mihome:sensor_plug:158d0001XXXXXX "Xiaomi Plug" [itemId="158d0001XXXXXX"]
-
-    Thing mihome:sensor_magnet:158d0001XXXXXX "Xiaomi Door Sensor" [itemId="158d0001XXXXXX"]
-
-    Thing mihome:sensor_switch:158d0001XXXXXX "Xiaomi Mi Wireless Switch" [itemId="158d0001XXXXXX"]
-
-    Thing mihome:86sw2:158d0001XXXXXX "Aqara Wireless Wall Switch" [itemId="158d0001XXXXXX"]
+Bridge  mihome:bridge:34ce00xxxxxx			"Xiaomi Gateway Bridge"		@ "Rossbuehel OG"	[serialNumber="34ce00xxxxxx", ipAddress="192.168.xx.xx", port=9898, key="xxx", pollingInterval=1000 ] 
+{
+	Things:
+		gateway	34ce00xxxxxx	"Xiaomi Mi Smart Home Gateway"	@ "Rossbuehel OG"	[itemId="34ce00xxxxxx"]
+		sensor_motion_aq2 158d0001xxxxx	"Xiaomi Motion Sensor"		@ "Rossbuehel Eingang"	[itemId="158d0001xxxxx"]
+		sensor_weather_v1 158d0001xxxxx	"Xiaomi Temp/humid/baro Sensor"	@ "Rossbuehel OG"	[itemId="158d0001xxxxx"]
+		sensor_switch 158d0001xxxxx	"Xiaomi Mi Wireless Switch"	@ "Rossbuehel Eingang"	[itemId="158d0001xxxxx"]
+		smoke 158d0001xxxxx	"Xiaomi Smoke Detector"		@ "Rossbuehel OG"	[itemId="158d0001xxxxx"]
 }
 ```
 
